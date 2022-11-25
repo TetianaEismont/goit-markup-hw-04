@@ -129,11 +129,11 @@ img {
     color: var(--main-text-color);
 }
 
-.nav a:hover,
-.nav a:focus,
+.nav-link:hover,
+.nav-link:focus,
 .contacts-link:hover,
 .contacts-link:focus,
-.link .contacts-icon:hover,
+.contacts-icon:hover,
 .contacts-icon:focus {
     color: var(--acent-color);
 }
@@ -151,7 +151,6 @@ img {
     background-color: var(--accent-background);
     text-align: center;
     max-width: 1600px;
-    height: 600px;
     background-image: linear-gradient(to right, 
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)), 
@@ -289,10 +288,6 @@ img {
     margin-bottom: 30px;
 }
 
-.subtitle-team {
-    padding-bottom: 10px;
-}
-
 .item.team {  
     background-color: var(--background);
     border-radius: 0px 0px 4px 4px;
@@ -300,6 +295,8 @@ img {
 }
 
 .subtitle-team {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -334,7 +331,6 @@ img {
 .social-media-link:hover,
 .social-media-link:focus,
 .footer .social-media-link:hover,
-.footer .social-media-link:hover,
 .footer .social-media-link:focus {
     color: var(--secondary-icon-color);
     background-color: var(--acent-color);
@@ -342,11 +338,6 @@ img {
 }
 
 .social-media-icon {
-    fill: currentColor;
-}
-
-.social-media-icon:hover,
-.social-media-icon:focus {
     fill: currentColor;
 }
 
@@ -372,7 +363,7 @@ img {
     width: 170px;
     height: 92px;
     color: var(--main-icon-color);
-    outline: 1px solid var(--main-icon-color);
+    border: 1px solid var(--main-icon-color);
     border-radius: 4px;
 }
 
@@ -429,7 +420,7 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer .item:not(:last-child) {
+.footer-contacts>.item:not(:last-child) {
     display: block;
     margin-bottom: 9px;
 }
@@ -442,14 +433,10 @@ img {
 .footer-subtitle {
     margin-top: 72px;
     margin-bottom: 20px;
-}
-
-.footer-subtitle {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--secondary-tect-color);
 }
 
@@ -466,7 +453,6 @@ img {
 .join-list>.item:not(:last-child) {
     margin-right: 10px;
 }
-
 
 /* Портфоліо */
 /* Фільтри */
@@ -532,8 +518,12 @@ img {
     background-color: var(--background);
 }
 
-.portfolio .item:hover,
-.portfolio .item:focus {
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
